@@ -1,0 +1,672 @@
+/* ============================================================
+                        fuentes
+============================================================ */
+@font-face {
+    font-family: "Roboto";
+    src: url("roboto/Roboto-Light.ttf");
+}
+@font-face {
+    font-family: "Roboto C";
+    src: url("roboto/Roboto-BoldCondensed.ttf");
+}
+*{
+    font-family: "Roboto", sans-serif;
+}
+/* ============================================================
+                        tabla basica
+============================================================ */
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    font-size: inherit;
+}
+table td,
+table th {
+    border-width: 0 0 1px;
+    padding: 8px 10px;
+}
+table th {
+    color: #cccccc;
+    background: #4e4e4e;
+}
+table tbody tr:hover, tr:nth-child(2n):hover {
+    background-color: #cdc9c0;
+}
+table tbody tr:nth-child(2n) {
+    background-color: #f7f3ea;
+}
+
+/* ============================================================
+                    enlaces
+============================================================ */
+a {
+    color: #197f91;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px;
+}
+a:hover {
+    color: #21d7ee;
+}
+
+/* ============================================================
+                     separador
+============================================================ */
+hr {
+    border: 0.05em;
+    height:2px;
+    text-align: center;
+    background: -webkit-linear-gradient(left, #fff, #93eaf2, #fff);
+    background: -moz-linear-gradient(left, #fff, #93eaf2, #fff);
+}
+
+/* ============================================================
+                formato de botones
+============================================================ */
+
+button, input, select, textarea {
+
+    margin: 0;
+}
+button, [type=button], [type=submit]{
+    font-family: "Roboto C", sans-serif;
+    cursor: pointer;
+    align-items: center;
+    border: 1px solid #d3d6db;
+    border-radius: 3px;
+    font-weight: bolder;
+    height: 32px;
+    line-height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+    vertical-align: top;
+    text-align: center;
+    white-space: nowrap;
+}
+button:hover, [type=button]:hover,[type=submit]:hover {
+    background-color: #1c95a8;
+    color:white;
+}
+button:active, [type=button]:active,[type=submit]:active {
+   transform: scale(0.95);
+}
+/* ============================================================
+                 formato de formularios
+============================================================ */
+form{
+}
+span {
+    color: #424542 ;
+    
+}
+label{
+}
+[type=text], textarea, input {
+    border: 1px solid #d3d6db;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 8px;
+    width: 99%;
+}
+[type=text]:hover, textarea:hover {
+    border-color: #8e8e8e;
+}
+[type=text]:active, textarea:active, [type=text]:focus, textarea:focus {
+    border-color: #1fc8db;
+    outline: none;
+}
+select {
+    display: inline-block;
+    height: 32px;
+    position: relative;
+    vertical-align: top;
+    align-items: center;
+    border: 1px solid #d3d6db;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 1px 10px ;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select:hover {
+    border-color: #aeb1b5;
+}
+
+select:active,  select:focus{
+    border-color: #1fc8db;
+    outline: none;
+}
+/* ============================================================
+            Paleta de colores predeterminada
+============================================================ */
+.rojo{
+    background: #dc6f6f;
+}
+.azul{
+    background: #0b99f4;
+}
+.error{
+    background: #ae3a31;
+    font-family: "Roboto C",sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+.bien{
+    border-color: #10b260;
+}
+.primario{
+    background-color: #197f91;
+    color: rgba(235, 231, 220, 0.99);
+}
+.info{
+    background-color: #20bbd2;
+    color: rgba(235, 231, 220, 0.99);
+}
+.exito{
+    background-color: #10b260;
+    color: rgba(235, 231, 220, 0.99);
+}
+.advertencia{
+    background-color: #c0c629;
+}
+.peligro{
+    background-color: #f4474a;
+    color: rgba(235, 231, 220, 0.99);
+}
+
+.primario:hover{
+    background-color: #22aec7;
+}
+.info:hover{
+    background-color: #25d9f4;
+}
+.exito:hover{
+    background-color: #15e57c;
+}
+.advertencia:hover{
+    background-color: #e6ed31;
+    color: #4e4e4e;
+}
+.peligro:hover{
+    background-color: #dc001b;
+}
+
+/* ============================================================
+                     EFECTOS VARIOS
+============================================================ */
+/*              SUBRAYADO       */
+.subrayado:after {
+    display: block;
+    position: absolute;
+    left: -1px;
+  /* con este atributo escogemos la posicion en donde nace la linea
+   bottom: 1px;*/
+    width: 0;
+    height: 3px;
+    background-color: #22aec7;
+    content: "";
+    /* esto activa la animacion de el sub*/
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.subrayado:hover {
+    color: black;
+    background-color: #ffffff;
+}
+.subrayado:hover:after {
+    width: 102%;
+}
+/* BORDE INTERNO */
+.borde:hover {
+    -webkit-box-shadow: inset 0 0 0 3px #dddbad;
+    -moz-box-shadow: inset 0 0 0 3px #dddbad;
+    box-shadow: inset 0 0 0 3px #dddbad;
+}
+/* ESCALA agrandar*/
+.escalaa:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* ESCALA diminuir*/
+.escalad:hover {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
+/*               sombra */
+.sombra:hover{
+    box-shadow: 2px 2px 2px #777777;
+}
+/*                 zoom en tablas */
+.zoom tbody tr:hover{
+    transform: scale(1.004);
+}
+
+/*                  radios checkbox switch*/
+.rcs {
+  margin: 80px auto 0;
+  width: 280px;
+  padding: 30px;
+  background: #fafafa;
+}
+.rcs input {
+  display: none;
+}
+.rcs label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  font-size: 18px;
+  padding: 15px 0;
+}
+.rcs input[type="checkbox"],
+.rcs input[type="radio"] {
+  position: absolute;
+  visibility: hidden !important;
+}
+.rcs input[type="checkbox"] + label:before,
+.rcs input[type="radio"] + label:before,
+.rcs input[type="checkbox"] + label:after,
+.rcs input[type="radio"] + label:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -7.5px;
+  box-sizing: border-box;
+}
+.rcs input[type="checkbox"] + label:before,
+.rcs input[type="radio"] + label:before {
+  width: 30px;
+  height: 15px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #e4e3e1;
+  border-radius: 15px;
+}
+.rcs input[type="checkbox"] + label:after,
+.rcs input[type="radio"] + label:after {
+  width: 15px;
+  height: 15px;
+  right: 15px;
+  background: #BDBDBD;
+  border-radius: 50%;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+.rcs input[type="checkbox"]:checked + label:after,
+.rcs input[type="radio"]:checked + label:after {
+  right: 0;
+  background: #FF9800;
+}
+
+
+/*                  radio checked elegant*/
+
+.rce input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+.rce label {
+  color: #9a929e;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+.rce input[type=radio]:checked + label {
+  color: #ccc8ce;
+  background: #675f6b;
+}
+
+.rce label + input[type=radio] + label {
+  border-left: solid 3px #675f6b;
+}
+
+.rce {
+  border: solid 3px #675f6b;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/*                  select switch*/
+/*  COMMON*/
+#wrapper {
+    min-width: 600px;
+}
+
+.settings {
+    display: table;
+    width: 100%;
+}
+.settings .row {
+    display: table-row;
+}
+.settings .question,
+.settings .switch {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+}
+.settings .question {
+    width: 600px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+.cmn-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+.cmn-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.switch label {
+    background-color: #f7f3ea;
+    border-radius: 0;
+}
+/* SWITCH 1 - ROUND*/
+input.cmn-toggle-round + label {
+    padding: 2px;
+    width: 40px;
+    height: 15px;
+    background-color: #dddddd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+input.cmn-toggle-round + label:before, input.cmn-toggle-round + label:after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
+}
+input.cmn-toggle-round + label:before {
+    right: 1px;
+    background-color: #f1f1f1;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+    width: 15px;
+    background-color: #a3a5a7;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;/**/
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    -webkit-transition: margin 0.4s;
+    -moz-transition: margin 0.4s;
+    -o-transition: margin 0.4s;
+    transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #15e57c;
+    /*   background-color: #8b8c8e;*/
+ }
+ input.cmn-toggle-round:checked + label:after {
+     margin-left: 27px;
+
+   /*  background-color: #15e57c;*/
+}
+
+/* SWITCH 2 - ROUND FLAT */
+input.cmn-toggle-round-flat + label {
+    padding: 2px;
+    /*ancho del area del switch*/
+    width: 46px;
+    /*alto del area del switch*/
+    height: 20px;
+    background-color: #dddddd;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:before, input.cmn-toggle-round-flat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+input.cmn-toggle-round-flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    /* grosor del pasador*/
+    width: 15px;
+    background-color: #dddddd;
+    -webkit-border-radius: 52px;
+    -moz-border-radius: 52px;
+    border-radius: 52px;
+    -webkit-transition: margin 0.4s, background 0.4s;
+    -moz-transition: margin 0.4s, background 0.4s;
+    -o-transition: margin 0.4s, background 0.4s;
+    transition: margin 0.4s, background 0.4s;
+}
+input.cmn-toggle-round-flat:checked + label {
+    background-color: #15e57c;
+}
+input.cmn-toggle-round-flat:checked + label:after {
+/*distancia q recorre el pasador*/
+    margin-left: 27px;
+    background-color: #15e57c;
+}
+
+/*SWITCH 3 - YES NO*/
+input.cmn-toggle-yes-no + label {
+    padding: 2px;
+    width: 45px;
+    height: 20px;
+}
+input.cmn-toggle-yes-no + label:before, input.cmn-toggle-yes-no + label:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #740014;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    /* ubicacion de las palabras
+    mayor valor= abajo
+    menor valor= arriba*/
+    line-height: 25px;
+}
+input.cmn-toggle-yes-no + label:before {
+    background-color: #dddddd;
+    content: attr(data-off);
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+input.cmn-toggle-yes-no + label:after {
+    background-color: #15e57c;
+    content: attr(data-on);
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    font-weight:bolder;
+    color: #fff;
+}
+input.cmn-toggle-yes-no:checked + label:before {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+input.cmn-toggle-yes-no:checked + label:after {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+/* ============================================================
+  ANIMACION
+============================================================ */
+.ani{
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+/* ============================================================
+  Posicionamiento y tamaño
+============================================================ */
+.izq{
+    float:left;
+    padding:3px;
+}
+.cen{
+    padding:3px;
+}
+.der{
+    float:left;
+    padding:3px;
+}
+
+.t10{
+    width: 10%;
+}
+.t20{
+    width: 20%;
+}
+.t50{
+    width: 50%;
+}
+.tmax{
+    width: 99%;
+}
+/* /*SWITCH 3 - YES NO*/
+[type=checkbox]{
+    padding: 2px;
+    width: 45px;
+    height: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #740014;
+    /* ubicacion de las palabr sans as
+    mayor valor= abajo
+    menor valor= arriba*/
+}
+[type=checkbox]:before {
+    background-color: #dddddd;
+    content: attr(data-off);
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+}
+[type=checkbox]:after, [type=checkbox]:active, [type=checkbox]:focus {
+    background-color: #15e57c;
+    content: attr(data-on);
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    font-weight:bolder;
+    color: #fff;
+}
+[type=checkbox]:before {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+[type=checkbox]:after, [type=checkbox]:active, [type=checkbox]:focus{
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+.modal{
+    z-index:3;
+    display:none;
+    padding-top:100px;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgba(0,0,0,0.4);
+          }
+.modalc{
+    margin:auto;
+    background-color:#fff;
+    position:relative;
+    padding:0;
+    outline:0;
+    width:600px
+}

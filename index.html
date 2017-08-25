@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <META HTTP-EQUIV=Refresh CONTENT=5>
+    <title></title>
+    <!--<link rel="stylesheet" type="text/css" href="bulma.css"/>-->
+      <link rel="stylesheet" type="text/css" href="plumaje.css">
+</head>
+<body>
+<table>
+  <thead>
+  <tr>
+      <th>Name</th>
+      <th>Instrument</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td>Robert Mikels</td>
+      <td>Lead Guitar</td>
+  </tr>
+  <tr>
+      <td>
+          <span>
+              Foo
+          </span>
+          <span class="info">
+              Bar
+          </span>
+          <span>
+              Foo bar
+          </span>
+      </td>
+      <td>Drums</td>
+  </tr>
+  </tbody>
+</table>
+<table>
+    <thead>
+    <tr><th>Descripcion</th><th>Link</th></tr>
+    </thead>
+    <tbody>
+    <tr><td>W3 School CSS</td><td><a href="https://www.w3schools.com/w3css/4/w3.css">Login</a></td></tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+</table>
+<div>
+<div class="izq info t10">izq</div>
+<div class="cen advertencia tmax">cen</div>
+<div class="der peligro t50">der</div>
+</div>
+<div></div><div></div>
+<h1>adler</h1>
+<a href="#">google</a>
+<form>
+<hr>
+<label>Name</label>
+<p>
+  <input class="input" placeholder="Text input">
+</p>
+<label>Username</label>
+<p>
+  <input placeholder="Text input" value="bulma">
+  <span>This username is available</span>
+</p>
+<label>Email</label>
+<p>
+  <input placeholder="Email input" value="hello@">
+  <span>This email is invalid</span>
+</p>
+
+    <label>Select
+        <select name="option">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+    </label>
+<p>. 
+  <textarea placeholder="Textarea"></textarea>
+</p>
+    <div id="main">
+        <div class="container">
+
+            <div class="settings">
+
+                <div class="row">
+                    <div class="question">
+                        Activar Veneco?
+                    </div>
+                    <div class="switch">
+                        <input id="cmn-toggle-3" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                        <label for="cmn-toggle-3"></label>
+                    </div>
+                </div><!-- /row -->
+
+                <div class="row">
+                    <div class="question">
+                        Activar Viajes?
+                    </div>
+                    <div class="switch">
+                        <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                        <label for="cmn-toggle-4"></label>
+                    </div>
+                </div><!-- /row -->
+
+                <div class="row">
+                    <div class="question">
+                        Te irias demasiado?
+                    </div>
+                    <div class="switch">
+                        <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+                        <label for="cmn-toggle-7" data-on="Si" data-off="No"></label>
+                    </div>
+                </div><!-- /row -->
+
+            </div>
+
+        </div>
+    </div><!-- #main -->
+
+<div class="rcs">
+  <h1>Radios:</h1>
+  <input type="radio" name="radio-cats" id="radio-1" value="1" checked>
+  <label for="radio-1">Radio Label 1</label>
+  <input type="radio" name="radio-cats" id="radio-2" value="2">
+  <label for="radio-2">Radio Label 2</label>
+  <input type="radio" name="radio-cats" id="radio-3" value="3" checked>
+  <label for="radio-3">Radio Label 3</label>
+</div>
+<div class="rce">
+<input type="radio" id="option-one" name="selector"><label for="option-one">One</label><input type="radio" id="option-two" name="selector"><label for="option-two">Two</label><input type="radio" id="option-three" name="selector"><label for="option-three">Three</label>
+  </div>
+    <p>
+
+<p>
+  <button>Submit</button>
+  <button>Cancel</button>
+<input type="button" value="Prueba">
+<input type="submit">
+    <button class="primario">Primario</button>
+    <button class="info ani">Info animado</button>
+    <button class="exito">Exito</button>
+    <button class="advertencia">Advertencia</button>
+    <button class="escalaa peligro ani">Peligro agrandado animado</button>
+    <button class="escalad peligro ani">Peligro disminuido animado</button>
+    <button class="subrayado">SubRayado</button>
+</form>
+
+<div>
+    <h2>Modal</h2>
+    <p>Use w3-container classes to create different sections in the modal (e.g. header & footer).</p>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+
+    <div id="id01" class="modal">
+        <div class="modalc">
+            <header class="w3-container w3-teal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+              class="w3-button w3-display-topright">&times;</span>
+                <h2>Modal Header</h2>
+            </header>
+            <div class="w3-container">
+                <p>Some text..</p>
+                <p>Some text..</p>
+            </div>
+            <footer class="w3-container w3-teal">
+                <p>Modal Footer</p>
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>
